@@ -40,7 +40,7 @@ app.use((err, req, res, next) => {
 // mongoose config
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect("mongodb+srv://salmanazmirafi:salmanazmirafi@cluster0.exejumv.mongodb.net/blog-store?retryWrites=true&w=majority");
     console.log("Database Connect");
   } catch (error) {
     throw error;
